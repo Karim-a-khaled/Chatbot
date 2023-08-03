@@ -1,13 +1,11 @@
 import express from 'express'
 import cors from "cors";
-import dotenv from 'dotenv';
 const PORT = 8000
 const app = express()
 app.use(express.json())
 app.use(cors())
-dotenv.config();
 
-const API_KEY =  process.env.API_KEY
+const API_KEY =  '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'
 
 app.post('/completions', async (req,res) =>{
   
